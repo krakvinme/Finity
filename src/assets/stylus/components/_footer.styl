@@ -22,7 +22,8 @@
         padding 15px 22px
         font-size 13px
         text-decoration none
-        font-family CircularStdMedium
+        font-family CircularStdMedium, serif
+        transition background .25s ease
     &:before
         content ""
         display inline-block
@@ -104,7 +105,7 @@
     display flex
     align-items center
     &__link
-        width 18px
+        width 20px
         height 22px
         margin-right 19px
         &:last-child 
@@ -117,3 +118,8 @@
         &.m-google
             background url('../img/svg/google.svg') center/cover no-repeat
     
+
+
+.page-footer__btn
+    &:hover
+        background #0a39b1

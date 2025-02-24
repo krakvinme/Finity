@@ -7,13 +7,13 @@
 	padding 0 20px
 
 h1 
-	font-family CircularStdBold
+	font-family CircularStdBold, serif
 	font-size 58px
 	margin 0 0 20px 0
 	color alt-color
 	letter-spacing: -1px;
 h2
-	font-family CircularStdBold
+	font-family CircularStdBold, serif
 	font-size 48px
 	margin 0 0 20px 0
 	color alt-color
@@ -24,10 +24,21 @@ h2
 	background #0f53fa
 	color #fff
 	font-size 16px
-	font-family CircularStdMedium
+	font-family CircularStdMedium, serif
 	padding 18px 25px
 	text-decoration none
 	border-radius 5px
+	transition: background .25s ease
+	transition-delay unset
+	&__icon
+		display inline-block
+		vertical-align middle
+		margin-right 15px
+	&:hover
+		background #0a39b1
+
+.btn.el-animate.el-show
+	transition: background .25s ease, transform 1.5s ease,opacity 1s ease
 
 .btn-alt
 	display inline-block
@@ -35,19 +46,599 @@ h2
 	border 2px solid #e2e4e8
 	color alt-color
 	font-size 16px
-	font-family CircularStdMedium
+	font-family CircularStdMedium, serif
 	padding 16px 24px
 	text-decoration none
 	border-radius 5px
-
-.btn__icon
-	display inline-block
-	vertical-align middle
-	margin-right 15px
+	transition all .25s ease
+	&:hover
+		background #ffd166
+		border-color #ffd166
 
 .page-pre
 	max-width 510px 
 	margin-left auto
 	margin-right auto
 	text-align center
+
+// .page-pre__add
+	
+.top-main
+	background #f7f8fa
+	padding-top 97px
+	text-align center
+	box-shadow inset 0px -98px 114px 0px rgba(29,41,63,0.04);
+	overflow hidden
+	h1 
+		margin 0 0 10px 0
+	.btn
+		margin-bottom 18px
+	.page-pre__add
+		margin 0 auto 38px
+		font-size 21px 
+		line-height 1.4
+
+.top-main__add
+	font-size 13px
+	color #8c97ac
+
+.top-main__wrap
+	overflow hidden
+	padding 110px 0 0 0
+	display flex
+	justify-content center
+    
+
+.top-main__img
+	background #fff
+	border-top-left-radius 10px
+	border-top-right-radius 10px
+	box-shadow 0px -17px 84px 0px rgba(29, 41, 63, 0.12)
+	position relative
+	img
+		display block
+		max-width 100%
+		position relative
+		border-top-left-radius 10px
+		border-top-right-radius 10px
+		z-index 2
+	&:before
+		content ''
+		display block
+		width 300px
+		height 300px
+		background #ffd166
+		position absolute
+		left -79px
+		bottom -93px
+		border-radius 45px
+		transform rotate(67deg)
+		animation rotate 7s infinite ease-in;
+	&:after	
+		content ''
+		display block
+		width 285px
+		height 285px
+		background #37def5
+		position absolute
+		right -98px
+		top -90px
+		border-radius 50%
+		animation: scale_min 4s infinite ease-in
+    	
+.solution
+	padding 47px 0 117px
+	border-bottom 1px solid #eceff4
+	text-align center
+	h2
+		margin-bottom 8px
+	.page-pre
+		margin-bottom 81px
+	.page-pre__add
+		line-height 1.75
+	.btn
+		padding 18px 20px 14px 22px;
+
+.companies
+	display flex
+	justify-content center
+	align-items center
+	margin-bottom 133px
+
+.companies__item
+	margin-right 72px
+	opacity 0.5
+	filter grayscale(1)
+	&:last-child
+		margin-right 0
+	img
+		display block
+
+.solution-items
+	margin-bottom 65px
+
+.solution-items__slider
+	overflow visible
+	&:after
+		content ""
+		display block
+		height 100%
+		width 100%
+		position absolute
+		top 0
+		left 100%
+		background rgba(255,255,255,0.6)
+		z-index: 3;
+	&:before
+		content ""
+		display block
+		height 100%
+		width 100%
+		position absolute
+		top 0
+		right 100%
+		background rgba(255,255,255,0.6)
+		z-index: 3;
+
+.solution-in
+	padding 20px
+	background #f7f8fa
+	border-radius 10px
+	text-align left
+	display flex
+
+.solution-icon
+	width 55px
+	min-width 55px
+	height 55px
+	display flex
+	align-items center
+	justify-content center
+	background #fff
+	border-radius 50%
+	margin-right 20px
+
+.solution-info 
+	margin: -3px 0 0 0;
+
+.solution-title
+	font-size 21px
+	font-family CircularStdBold, serif
+	color alt-color
+	margin-bottom 13px
+
+.solution-txt
+	font-size 16px
+	line-height 1.7
+
+
+.people
+	padding 132px 0
+	background #f7f8fa
+	position relative
+	overflow hidden
+	.page-pre__add
+		line-height 1.7
+	.page-pre
+		position relative
+		z-index 1
+		margin-bottom 87px
+		h2
+			margin-bottom 8px
+	&:before
+		content ""
+		background #ffd166
+		border-radius 50%
+		display block
+		width 543px
+		height 543px
+		position absolute
+		top -383px
+		right -192px
+		animation: scale 4s infinite ease-in
+	
+
+.people-cards
+	display flex
+	flex-wrap wrap
+	margin 0 -15px
+
+.people-cards__item
+	width 33.333%
+	padding 0 15px
+	margin-bottom 30px
+
+.people-cards__in
+	width 100%
+	height 100%
+	border-radius 10px
+	background #fff
+	border 2px solid #f0f1f3
+	padding 20px 20px 22px 20px
+
+.people-cards__top
+	margin 0 0 19px 0
+	display flex
+	align-items flex-start
+	padding 0 35px 0 0
+	position relative
+	&:after
+		content ""
+		display inline-block
+		width 16px
+		height 13px
+		background url("../img/svg/twitter.svg") center no-repeat
+		position absolute
+		right -4px
+		top 2px
+
+.people-cards__title
+	color alt-color
+	font-family CircularStdMedium, serif
+	margin-bottom 10px
+
+.people-cards__pos
+	font-size 13px
+
+.people-cards__txt
+	font-size 16px
+	line-height: 1.7;
+
+
+.people-cards__info
+	margin -5px 0 0 0
+
+.people-cards__icon
+	width 41px
+	min-width 41px
+	height 41px
+	border-radius 50%
+	overflow hidden
+	margin-right 10px
+	img 
+		display block
+		width 100%
+		height 100%
+		object-fit cover
+
+
+
+.choose
+	background #fff
+	padding 150px 0 93px
+	h2
+		max-width 450px
+	&__item
+		border-top 2px solid #f6f8fa
+		padding 35px 0 32px 0
+		display flex
+		position relative
+		z-index 2
+
+.choose__top
+	position relative
+	padding-right 400px
+	margin-bottom 40px
+
+.nav-tabs
+	margin 0
+	padding 0
+	list-style-type none
+	position absolute
+	top 4px
+	right -3px
+	display flex
+	border 2px solid #ffd166
+	border-radius 10px
+	overflow hidden
+	li
+		overflow hidden
+		transition all .25s ease
+		&.active
+			background #ffd166
+		&:not(.active)
+			&:hover
+				background #fdebc2
+		a
+			display block
+			text-decoration none
+			font-size 16px
+			font-family CircularStdMedium, serif
+			color alt-color
+			padding 18px 58px 15px 58px
+			border-radius 10px
+
+.tab-pane
+	display none
+	&.active
+		display block
+
+
+// .choose__item 
+// 	border-top 2px solid #f6f8fa
+// 	padding 35px 0 32px 0
+// 	display flex
+// 	position relative
+// 	z-index 2
+
+.choose__plan,
+.choose-ben,
+.choose__price,
+.choose-btn
+	// flex-grow: 1;
+	flex 1 1 0px
+
+.price-sum
+	font-size 58px
+	line-height 1
+	margin-bottom 7px
+	font-family CircularStdMedium, serif
+	color alt-color
+
+.price-add
+	font-size 16px
+	line-height 1.6
+	max-width 120px
+
+.choose__plan
+	color alt-color
+	font-family CircularStdBold, serif
+	font-size 21px
+	max-width 255px
+
+.choose-ben
+	padding-top 3px
+	
+.choose-btn
+	display flex
+	flex-direction column
+	align-items flex-end
+	margin-top -4px
+	.btn-alt,
+	.btn
+		white-space nowrap
+
+.choose-ben__item
+	color alt-color
+	margin-bottom 20px
+	&:last-child
+		margin-bottom 0
+
+.choose__price
+	padding-left 140px
+
+
+.emails
+	padding 247px 0 120px
+	h2
+		margin-bottom: 17px;
+	.page-pre__add
+		line-height 1.75
+	.page-pre
+		text-align left
+		max-width 430px
+		margin-bottom 52px
+
+	
+.emails-list
+	position relative
+	z-index 1
+.emails__wrap
+	display flex
+
+.emails__item 
+	display flex
+	align-items center
+	margin-bottom 16px
+	&:last-child
+		margin-bottom 0
+
+.emails__icon
+	display flex
+	align-items center
+	justify-content center
+	width 59px
+	min-width 59px
+	height 59px
+	border-radius 50%
+	background #f7f8fa
+	margin-right 18px
+	img
+		max-width 100%
+
+.emails__txt
+	font-family CircularStdMedium, serif
+	font-size 24px
+	color alt-color
+
+.emails__pro
+	display inline-block
+	vertical-align middle
+	font-family CircularStdBold, serif
+	font-size 13px
+	color alt-color
+	text-transform uppercase
+	border-radius 5px
+	background #ffd166
+	padding 6px 7px
+	margin-left 16px
+
+.emails-view__circle
+	width 615px
+	height 615px
+	border-radius 50%
+	background #ffd166
+	position relative
+	left 69px
+	animation scale 6s infinite ease-in
+
+.emails-view
+	margin-top -130px
+	margin-left 50px
+	position relative
+
+.emails-view__card
+	position absolute
+	left 87px
+	top 108px
+	margin-top 5px
+	z-index 2
+	img
+		display block
+
+.emails-view__inner
+    background #fff
+	width 865px
+	height 614px
+	border-top-left-radius 10px
+	border-bottom-left-radius 10px
+	box-shadow 0px -17px 84px 0px rgba(29, 41, 63, 0.12)
+	position absolute
+	left 266px
+	top 55px
+	img
+		display block
+		max-width 100%
+		position relative
+		border-top-left-radius 10px
+		border-bottom-left-radius 10px
+
+.work 
+	padding 149px 0 199px
+	h2
+		margin-bottom: 17px;
+	.page-pre__add
+		line-height 1.75
+	.page-pre
+		text-align left
+		max-width 390px
+		margin-bottom 52px
+		margin-left: 0
+
+.work__wrap
+	display flex
+	align-items center
+
+.work__circle
+	width 505px
+	height 505px
+	border-radius 50%
+	background #37def5
+	animation scale 7s infinite ease-in
+
+.work__view
+	width 50%
+	position relative
+
+.work__info
+	flex 1
+	margin 37px 0 0 80px
+
+.work__img
+	position absolute
+	top -84px
+	left -20px
+	img
+		display block
+
+.work__msg
+	position absolute
+	top 262px
+	left 210px
+	img
+		display block
+
+.work-links__item
+	margin-bottom 15px
+	&:last-child
+		margin-bottom 0
+
+.w-link
+	display inline-flex
+	align-items center
+	padding 9px 23px 12px 24px
+	border-radius 5px
+	text-decoration none
+	min-width 238px;
+	transition background .25s ease
+	&.app-link
+		background #0f53fa
+		color #e9f7fe
+		border 2px solid transparent
+		&:hover
+			background #0a39b1
+	&.google-link
+		border 2px solid #e2e4e8
+		.w-link__top
+			color #7c8087
+		.w-link__view
+			color #1d293f
+		&:hover
+			background #e2e4e8
+
+.w-link__icon 
+	width 33px
+	margin-right 21px
+	img
+		display block
+
+.w-link__top
+	font-size 16px
+	margin-bottom 6px
+
+.w-link__view 
+	font-size 24px
+	font-family CircularStdBold, serif
+
+
+.el-animate
+	opacity 0
+	transform translateY(30px)
+	&.el-show
+		opacity 1
+		transition transform 1.5s ease, opacity 1s ease
+		transform translateY(0)
+	&:nth-child(2)
+		transition-delay 0.3s
+	&:nth-child(3)
+		transition-delay 0.6s
+	&:nth-child(4)
+		transition-delay 0.9s
+	&:nth-child(5)
+		transition-delay 1.2s
+	&:nth-child(6)
+		transition-delay 1.5s
+	&:nth-child(7)
+		transition-delay 1.8s
+	&:nth-child(8)
+		transition-delay 2.1s
+	&:nth-child(9)
+		transition-delay 2.4s
+	&:nth-child(10)
+		transition-delay 2.7s
+
+
+@keyframes scale
+	0%
+		transform:scale(1)
+	50%
+		transform:scale(1.2)
+	100%
+		transform:scale(1)
+
+@keyframes scale_min
+	0%
+		transform:scale(1)
+	50%
+		transform:scale(1.1)
+	100%
+		transform:scale(1)
+
+@keyframes rotate
+	0%
+		transform: rotate(58deg);
+	50%
+		transform: rotate(77deg);
+	100%
+		transform: rotate(58deg);
 
