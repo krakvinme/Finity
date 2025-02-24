@@ -1,0 +1,1 @@
+{"version":3,"sources":["common.js"],"names":["window","addEventListener"],"mappings":"AAEAA,OAAAC,iBAAA,OAAA,YAEA","file":"common.js","sourcesContent":[" \n\nwindow.addEventListener(\"load\", function() {\n\t\n});\n\n"]}

@@ -1,0 +1,119 @@
+.page-footer
+    background #1d293f
+    position relative
+    padding 135px 0 0
+    // overflow hidden
+    &__logo
+        display inline-block
+        width 60px
+        height 60px
+        background url(../img/svg/f-logo.svg) center/cover no-repeat    
+        margin-bottom 11px  
+    &__txt
+        font-size 16px
+        line-height: 1.75;
+        color #8c97ac
+        margin-bottom 30px
+    &__btn
+        display inline-block
+        color #fff
+        background #0f53fa
+        border-radius 5px
+        padding 15px 22px
+        font-size 13px
+        text-decoration none
+        font-family CircularStdMedium
+    &:before
+        content ""
+        display inline-block
+        width 255px
+        height 255px
+        background #ffd166
+        border-radius 50%
+        position absolute
+        left -165.5px
+        bottom -127.5px
+        animation scale 3s infinite ease-in;
+    &:after
+        content ""
+        display inline-block
+        width 400px
+        height 400px
+        background #37def5
+        position absolute
+        right -324px
+        top -239px
+        border-radius 45px
+        transform rotate(58deg)
+        animation rotate 7s infinite ease-in;
+
+.page-footer-info
+    &__wrap
+        display flex
+        justify-content space-between
+        padding 0 0 135px 0
+    &__pre
+        width 260px
+        margin-right 50px
+
+
+.bottom-menu
+    display flex
+    margin -7px -75px 0 0
+    &__item
+        padding-right 75px
+    &__top
+        color #8c97ac
+        margin-bottom 32px
+    &__link
+        display block
+        font-size 16px
+        color #e9f7fe
+        margin-bottom 24px
+        text-decoration none
+        &:last-child
+            margin-bottom 0
+    &__msg
+        font-size 16px
+        line-height 1.75
+        color #e9f7fe
+        margin -3px 0 25px
+        max-width 255px
+    &__contact
+        display block
+        font-size 16px
+        color #ffd166
+        margin-bottom 10px
+        text-decoration none
+        &:last-child
+            margin-bottom 0
+
+.bottom
+    color #8c97ac
+    font-size 13px
+    position relative
+    z-index 5
+    &__wrap
+        border-top 1px solid rgba(255,255,255,0.2)
+        padding 24px 0 28px
+        display flex
+        justify-content space-between
+        align-items center
+
+.socials
+    display flex
+    align-items center
+    &__link
+        width 18px
+        height 22px
+        margin-right 19px
+        &:last-child 
+            margin-right 0
+        &.m-twitter
+            background url('../img/svg/twitter.svg') center/cover no-repeat
+            transform translate(0, 1px)
+        &.m-fb
+            background url('../img/svg/fb.svg') center/cover no-repeat
+        &.m-google
+            background url('../img/svg/google.svg') center/cover no-repeat
+    
