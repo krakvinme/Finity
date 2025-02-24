@@ -1,1 +1,3 @@
-# Finity
+### Finity - Live Demo - ...
+---
+Simple onepage project using: Gulp, Pug, Stylus
